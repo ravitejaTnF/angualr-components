@@ -1,0 +1,14 @@
+<div style="height:80vh;padding:24px;margin-bottom: 24px;">
+  <ngx-datatable
+    class="material"
+    [rows]="rows"
+    [columns]="columns"
+    [columnMode]="'force'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [rowHeight]="'auto'"
+    [limit]="pageSize"
+    [offset]="offset"
+    (page)="onPage($event)">
+  </ngx-datatable>
+</div>

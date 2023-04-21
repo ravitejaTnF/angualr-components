@@ -1,0 +1,11 @@
+<p>Window width is :: {{windowWidth}}</p>
+
+<p *ngIf="windowWidth < 500; else elseCondition">You are now in a mobile screen!</p>
+
+<ng-template #elseCondition>
+    you are not on a mobile screen,LOl
+</ng-template>
+<br>
+Mouseover
+<p (mouseenter)="onMouseEnter()" (mouseout)="onMouseOut()">{{mouseEnterText}}</p>
+
